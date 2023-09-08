@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* NAVBAR */
+  nav {
+    padding: 30px auto;
+  }
+  /* SERVICE DETAILS SECTION */
+  .service-details-page {
+    background: linear-gradient(#0e1d34d4, #0e1d34c0),
+      url(./assets/img/page-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+  .service-details-page .service-details-page-text {
+    padding: 140px 400px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-details-page .service-details-page-text h1 {
+    font-size: 56px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .service-details-page .service-details-page-text p {
+    font-size: 15px;
+    color: #d8dade;
+    font-weight: 400;
+    text-align: center;
+  }
+  /* SERVICE DETAILS HEADING */
+  .service-details-page-heading {
+    background-color: #f3f6fc;
+    padding: 20px 120px;
+    margin-bottom: 80px;
+  }
+  .service-details-page-heading p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .service-details-page-heading p span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #537cce;
+  }
+  .service-details-page-heading p a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #0d42ff;
+    font-weight: 500;
+  }
+  /* SERVICE DETAILS INFO SECTION */
+  .service-details-info-section{
+    display: flex;
+    padding: 0 120px 80px;
+    gap: 30px;
+  }
+  .service-details-info-section .service-details-info{
+    width: 35%;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories{
+    border: 1px solid #D8E3F4;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories ul a{
+    text-decoration: none;
+    color: #0E1D34;
+    font-size: 15px;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories ul .service-details-link-1{
+    font-weight: 600;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories ul a{
+    border-left: 3px solid #C2CBDF;
+    padding: 5px 15px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories ul .service-details-link-1{
+    border-left: 3px solid #0D42FF;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories ul a:hover{
+    border-left: 3px solid #0D42FF;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories-text{
+    width: 100%;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories-text h2{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0E1D34;
+  }
+  .service-details-info-section .service-details-info .service-details-info-categories-text p{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .service-details-img-section{
+    width: 65%;
+  }
+  .service-details-img-section .service-details-img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .service-details-img-section .service-details-img img{
+    width: 100%;
+  }
+  .service-details-img-section .service-details-img-section-text h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: #0E1D34;
+    line-height: 33.6px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .service-details-img-section .service-details-img-section-text p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .service-details-img-section .service-details-img-section-text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .service-details-img-section .service-details-img-section-text ul li{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    gap: 8px;
+    width: 100%;
+  }
+  .service-details-img-section .service-details-img-section-text ul li i{
+    color: #0d42ff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0D42FF;
+    border-radius: 100%;
+  }
+
+  /* FAQ */
+  .faq{
+    display: none;
+  }
+
+  /* SERVICE DETAILS PAGE SMALL SCREEN MEDIA QUERY */
+@media (390px <= width <= 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body.static {
+    overflow: hidden;
+  }
+  /* HOME PAGE */
+  /* NAVBAR */
+  nav {
+    padding: 20px 0;
+  }
+  nav .nav-links {
+    display: none;
+  }
+  nav .brand {
+    padding-left: 20px;
+  }
+  .small-screen-nav-btn {
+    display: flex;
+    padding-right: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .small-screen-nav-btn.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .small-screen-nav-btn.active {
+    display: flex;
+  }
+  .small-screen-nav-btn.inactive {
+    display: none;
+  }
+  .small-screen-nav-btn-2.active {
+    display: flex;
+    margin-right: 20px;
+  }
+  .small-screen-nav-btn-2.inactive {
+    display: none;
+  }
+  .small-screen-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  /* NAVBAR */
+  nav {
+      padding: 35px 0;
+  }
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+      padding: 140px 20px 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+  .service-details-page .service-details-page-text h1{
+      width: 100%;
+      text-align: center;
+  }
+  .service-details-page .service-details-page-text p{
+      width: 100%;
+      font-size: 14px;
+  }
+
+  /* SERVICE DETAILS PAGE HEADING */
+  .service-details-page-heading{
+      background-color: #F3F6FC;
+      padding: 20px;
+      margin-bottom: 30px;
+  }
+  /* SERVICE DETAILS INFO SECTION */
+  .service-details-info-section{
+    flex-direction: column;
+    padding: 0 20px 60px;
+  }
+  .service-details-info-section .service-details-info{
+    width: 100%;
+  }
+  .service-details-img-section{
+    width: 100%;
+  }
+
+}
+
+/* SERVICE DETAILS MEDIUM SCREEN MEDIA QUERY */
+@media(577px <= width <= 617px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 40px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 40px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+@media(617px <= width <= 640px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 60px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 60px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 60px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(641px <= width <= 681px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 80px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 80px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 80px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(681px <= width <= 768px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 100px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 100px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 100px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(769px <= width <= 810px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 40px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 40px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(810px <= width <= 851px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 60px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 60px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 60px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+@media(851px <= width <= 891px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 80px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 80px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 80px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+@media(891px <= width <= 931px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 100px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 100px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 100px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(931px <= width <= 971px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 120px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 120px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 120px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(971px <= width <= 992px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 140px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 140px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  flex-direction: column;
+  padding: 0 140px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+/* SERVICE DETAILS LARGE SCREEN MEDIA QUERY */
+@media(992px <= width <= 1033px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 200px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  padding: 0 40px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(1033px <= width <= 1073px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 200px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 60px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  padding: 0 60px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+@media(1073px <= width <= 1114px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 200px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 80px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  padding: 0 80px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+@media(1114px <= width <= 1155px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 200px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 100px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  padding: 0 100px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
+
+
+
+@media(1155px <= width <= 1214px){
+  /*  SERVICE DETAILS PAGE TEXT */
+  .service-details-page .service-details-page-text{
+    padding: 140px 200px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.service-details-page .service-details-page-text h1{
+    width: 100%;
+    text-align: center;
+}
+.service-details-page .service-details-page-text p{
+    width: 100%;
+    font-size: 14px;
+}
+
+/* SERVICE DETAILS PAGE HEADING */
+.service-details-page-heading{
+    background-color: #F3F6FC;
+    padding: 20px 120px;
+    margin-bottom: 30px;
+}
+/* SERVICE DETAILS INFO SECTION */
+.service-details-info-section{
+  padding: 0 120px 60px;
+}
+.service-details-info-section .service-details-info{
+  width: 100%;
+}
+.service-details-img-section{
+  width: 100%;
+}
+}
