@@ -38,13 +38,15 @@ h1{
     transform: translateY(-5px);
     box-shadow: 10px 10px 10px 8px rgba(41, 40, 40, 0.948);
 }
-.user-card-section .user-card .firstname{
+.user-card-section .user-card .username{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.user-card-section .user-card .username .firstname,
+.user-card-section .user-card .username .lastname{
     font-size: 16px;
     color: dodgerblue;
-}
-.user-card-section .user-card .lastname{
-    font-size: 13px;
-    font-style: italic;
 }
 .user-card-section .user-card .id{
     font-size: 11px;

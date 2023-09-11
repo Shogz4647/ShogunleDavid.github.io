@@ -12,8 +12,10 @@ fetch("https://dummyapi.io/data/v1/user", { method : "GET", headers: { 'app-id' 
             <div class="user-img">
                 <img src="${element.picture}" alt="">
             </div>
-            <h4 class = "firstname" >${element.firstName}</h4>
-            <p class = "lastname">${element.lastName}</p>
+            <div class = "username">
+                <h4 class = "firstname" >${element.firstName}</h4>
+                <h4 class = "lastname">${element.lastName}</h4>
+            </div>        
             <p class = "id">${element.id}</p>
             <div class="social-handle">
                 <i class="fa-brands fa-x-twitter"></i>
